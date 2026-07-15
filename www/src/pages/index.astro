@@ -1,5 +1,6 @@
 ---
-// import "../styles/global.css";
+import "../styles/global.css";
+import { Font } from "astro:assets";
 ---
 <!doctype html>
 <html lang="en">
@@ -8,23 +9,27 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
+		<Font cssVariable="--font-ibm-plex-mono" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro Basics</title>
 	</head>
-	<body>
+	<body class="bg-medium text-primary">
 		<nav>
 			<a>Software</a>
 			<a>About</a>
 		</nav>
-		<h1>Welcome to LevelSmith Labs</h1>
+		<div class="bg-dark">
+			<h1 class="text-4xl uppercase">Welcome to LevelSmith Labs</h1>
 		<ul>
 			<li>LevelSmith: Foundry 2D</li>
 			<li>Release 1.0</li>
 		</ul>
 		<a>Download</a>
+		</div>
 		<h2>Our Software</h2>
+		<hr class="h-[2px] border-0 bg-secondary">
 		<ul>
-			<div>
+			<div class="bg-accent rounded-md">
 				<h3>LevelSmith: Foundry 2D</h3>
 				<p>Release 1.0</p>
 				<a>Learn More</a>
@@ -34,31 +39,40 @@
 			</div>
 		</ul>
 		<h2>Contact</h2>
+		<hr class="h-[2px] border-0 bg-secondary">
 		<li>
-			<div>
-				<p>CEO</p>
-				<h3>Sten McKinzie</h3>
-				<span>Email:</span> <a>xyz@rit.edu</a>
-				<span>Phone:</span> <a>555-555-5555</a>
-				<span>Website:</span> <a>link</a>
+			<div class="flex flex-col gap-[4px] border-2 border-primary rounded-md  p-[8px]">
+				<p class="text-secondary">CEO</p>
+				<h3 class="text-2xl">Sten McKinzie</h3>
+				<hr class="h-[2px] border-0 bg-secondary">
+				<div class="flex flex-row gap-[8px]"><p>Email:</p><a>xyz@rit.edu</a></div>
+				<div class="flex flex-row gap-[8px]"><p>Phone:</p><a>555-555-5555</a></div>
+				<div class="flex flex-row gap-[8px]"><p>Website:</p><a>link</a></div>
 			</div>
-			<div>
-				<p>Producer</p>
-				<h3>Bee Morse</h3>
-				<a>Email</a>
-				<a>Website</a>
+			<div class="flex flex-col gap-[4px] border-2 border-primary rounded-md  p-[8px]">
+				<p class="text-secondary">Producer</p>
+				<h3 class="text-xl">Bee Morse</h3>
+				<hr class="h-[2px] border-0 bg-secondary">
+				<div class="">
+					<a>Email</a>
+					<a>Website</a>
+				</div>
 			</div>
-			<div>
+			<div class="flex flex-col border-2 border-primary rounded-md">
 				<p>Tech Lead</p>
-				<h3>Bee Morse</h3>
-				<a>Email</a>
-				<a>Website</a>
+				<h3>Theo Ruefli</h3>
+				<span>
+					<a>Email</a>
+					<a>Website</a>
+				</span>
 			</div>
-			<div>
+			<div class="flex flex-col border-2 border-primary rounded-md">
 				<p>Design Lead</p>
-				<h3>Bee Morse</h3>
-				<a>Email</a>
-				<a>Website</a>
+				<h3>Chris Hamam</h3>
+				<span>
+					<a>Email</a>
+					<a>Website</a>
+				</span>
 			</div>
 		</li>
 	</body>
