@@ -1,12 +1,65 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-import "../styles/global.css";
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+// import "../styles/global.css";
 ---
-
-<Layout>
-	<Welcome />
-</Layout>
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro Basics</title>
+	</head>
+	<body>
+		<nav>
+			<a>Software</a>
+			<a>About</a>
+		</nav>
+		<h1>Welcome to LevelSmith Labs</h1>
+		<ul>
+			<li>LevelSmith: Foundry 2D</li>
+			<li>Release 1.0</li>
+		</ul>
+		<a>Download</a>
+		<h2>Our Software</h2>
+		<ul>
+			<div>
+				<h3>LevelSmith: Foundry 2D</h3>
+				<p>Release 1.0</p>
+				<a>Learn More</a>
+			</div>
+			<div>
+				More software coming soon!
+			</div>
+		</ul>
+		<h2>Contact</h2>
+		<li>
+			<div>
+				<p>CEO</p>
+				<h3>Sten McKinzie</h3>
+				<span>Email:</span> <a>xyz@rit.edu</a>
+				<span>Phone:</span> <a>555-555-5555</a>
+				<span>Website:</span> <a>link</a>
+			</div>
+			<div>
+				<p>Producer</p>
+				<h3>Bee Morse</h3>
+				<a>Email</a>
+				<a>Website</a>
+			</div>
+			<div>
+				<p>Tech Lead</p>
+				<h3>Bee Morse</h3>
+				<a>Email</a>
+				<a>Website</a>
+			</div>
+			<div>
+				<p>Design Lead</p>
+				<h3>Bee Morse</h3>
+				<a>Email</a>
+				<a>Website</a>
+			</div>
+		</li>
+	</body>
+</html>
