@@ -10,21 +10,41 @@ import HomePageLayout from "../layouts/HomePageLayout.astro";
 
 <HomePageLayout>
 	<!-- Section 1 -->
-			<SectionHeading title="Our Software" />
-			<div
-				class="flex flex-col gap-[24px] justify-center items-center w-full"
-			>
-				<ProductCard name="LevelSmith: Foundry 2D" description="Release 1.0"/>
-				<div class="text-xl font-medium">More software coming soon!</div>
-			</div>
-			<!-- Section 2 -->
-			<SectionHeading title="Contact" />
-			<div class="flex flex-row justify-center gap-[16px] w-full">
-				<ContactCard name="Sten McKinzie" role="CEO" email="xyz@rit.edu" phone="555-555-5555" website="www.xyzrit"/>
-				<div class="flex flex-col gap-[16px]">
-					<ContactCardSmall name="Bee Morse" role="Producer" email="xyz@rit.edu" />
-					<ContactCardSmall name="Theo Ruefli" role="Tech Lead" email="xyz@rit.edu" />
-					<ContactCardSmall name="Chris Hamam" role="Design Lead" email="xyz@rit.edu" />
-				</div>
-			</div>
+	<SectionHeading title="Our Software" />
+	<div class="flex flex-col gap-[24px] justify-center items-center w-full">
+		<ProductCard name="LevelSmith: Foundry 2D" description="Release 1.0" />
+		<div class="text-xl font-medium">More software coming soon!</div>
+	</div>
+	<!-- Section 2 -->
+	<SectionHeading title="Contact" />
+	<div class="flex flex-row justify-center gap-[16px] w-full">
+		<ContactCard
+			name="Sten McKinzie"
+			role="CEO"
+			email="xyz@rit.edu"
+			phone="555-555-5555"
+			website="www.xyzrit"
+		/>
+		<ContactCard 
+			name="Bee Morse" 
+			role="Producer" 
+			email="xyz@rit.edu" 
+			phone="555-555-5555"
+			website="www.xyzrit"
+		/>
+		<ContactCard 
+			name="Theo Ruefli" 
+			role="Tech Lead" 
+			email="xyz@rit.edu" 
+			phone="555-555-5555"
+			website="www.xyzrit"
+		/>
+		<ContactCard
+			name="Chris Hamam"
+			role="Design Lead"
+			email="xyz@rit.edu"
+			phone="555-555-5555"
+			website="www.xyzrit"
+		/>
+	</div>
 </HomePageLayout>
