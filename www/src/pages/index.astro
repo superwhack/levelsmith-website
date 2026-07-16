@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import { Font } from "astro:assets";
 ---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -11,69 +12,121 @@ import { Font } from "astro:assets";
 		<link rel="icon" href="/favicon.ico" />
 		<Font cssVariable="--font-ibm-plex-mono" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>LevelSmith Labs</title>
 	</head>
 	<body class="bg-medium text-primary">
-		<nav>
-			<a>Software</a>
-			<a>About</a>
+		<!-- Navigation Bar -->
+		<nav
+			class="fixed bg-medium border-b-2 border-b-accent flex flex-row justify-between w-full p-[8px] font-medium"
+		>
+			<a>Home</a>
+			<div class="flex flex-row gap-[12px]">
+				<a class="text-primary hover:text-accent-light">Software</a>
+				<a>About</a>
+			</div>
 		</nav>
-		<div class="bg-dark">
-			<h1 class="text-4xl uppercase">Welcome to LevelSmith Labs</h1>
-		<ul>
-			<li>LevelSmith: Foundry 2D</li>
-			<li>Release 1.0</li>
-		</ul>
-		<a>Download</a>
-		</div>
-		<h2>Our Software</h2>
-		<hr class="h-[2px] border-0 bg-secondary">
-		<ul>
-			<div class="bg-accent rounded-md">
-				<h3>LevelSmith: Foundry 2D</h3>
-				<p>Release 1.0</p>
-				<a>Learn More</a>
+		<!-- Main Content -->
+		<main>
+			<!-- Hero -->
+			<div class="bg-dark rounded-b-4xl flex flex-col gap-[16px] px-[40px] pt-[64px] pb-[32px]">
+				<h1 class="text-5xl/[56px] font-bold uppercase tracking-wide">Welcome to<br>LevelSmith Labs</h1>
+				<ul class="uppercase">
+					<li>LevelSmith: Foundry 2D</li>
+					<li>Release 1.0</li>
+				</ul>
+				<a class="bg-accent hover:bg-accent-medium rounded-md py-[4px] px-[16px] w-fit font-medium">Download</a>
 			</div>
-			<div>
-				More software coming soon!
+			<!-- Section 1 -->
+			<div class="my-[24px]">
+				<h2 class="text-3xl text-center font-semibold">Our Software</h2>
+				<hr class="h-[1px] border-0 bg-secondary" />
 			</div>
-		</ul>
-		<h2>Contact</h2>
-		<hr class="h-[2px] border-0 bg-secondary">
-		<li>
-			<div class="flex flex-col gap-[4px] border-2 border-primary rounded-md  p-[8px]">
-				<p class="text-secondary">CEO</p>
-				<h3 class="text-2xl">Sten McKinzie</h3>
-				<hr class="h-[2px] border-0 bg-secondary">
-				<div class="flex flex-row gap-[8px]"><p>Email:</p><a>xyz@rit.edu</a></div>
-				<div class="flex flex-row gap-[8px]"><p>Phone:</p><a>555-555-5555</a></div>
-				<div class="flex flex-row gap-[8px]"><p>Website:</p><a>link</a></div>
+			<div
+				class="flex flex-col gap-[24px] justify-center items-center w-full"
+			>
+				<div
+					class="bg-accent rounded-md flex flex-row items-center gap-[16px] rounded-lg py-[8px] px-[16px] w-fit h-fit"
+				>
+					<img class="" src="./src/assets/placeholder.svg" alt="LevelSmith logo"/>
+					<div class="self-stretch border-l-[1px] border-primary">
+					</div>
+					<div class="flex flex-col gap-[4px]">
+						<h3 class="text-xl font-medium">LevelSmith: Foundry 2D</h3>
+						<p>Release 1.0</p>
+					</div>
+					<a class="border-[1px] border-primary hover:bg-[#ffffff20] rounded-md py-[4px] px-[16px] font-medium">Learn More</a>
+				</div>
+				<div class="text-xl font-medium">More software coming soon!</div>
 			</div>
-			<div class="flex flex-col gap-[4px] border-2 border-primary rounded-md  p-[8px]">
-				<p class="text-secondary">Producer</p>
-				<h3 class="text-xl">Bee Morse</h3>
-				<hr class="h-[2px] border-0 bg-secondary">
-				<div class="">
-					<a>Email</a>
-					<a>Website</a>
+			<!-- Section 2 -->
+			<div class="my-[24px]">
+				<h2 class="text-3xl text-center font-semibold">Contact</h2>
+				<hr class="h-[1px] border-0 bg-secondary" />
+			</div>
+			<div class="flex flex-row justify-center gap-[16px] w-full">
+				<div
+					class="flex flex-col gap-[4px] border-1 border-primary rounded-lg p-[8px]"
+				>
+					<p class="text-secondary">CEO</p>
+					<h3 class="text-2xl font-medium">Sten McKinzie</h3>
+					<hr class="h-[1px] border-0 bg-secondary" />
+					<div class="flex flex-row gap-[8px]">
+						<p>Email:</p><a class="underline text-secondary hover:text-primary">xyz@rit.edu</a>
+					</div>
+					<div class="flex flex-row gap-[8px]">
+						<p>Phone:</p><a class="underline text-secondary hover:text-primary">555-555-5555</a>
+					</div>
+					<div class="flex flex-row gap-[8px]">
+						<p>Website:</p><a class="underline text-secondary hover:text-primary">link</a>
+					</div>
+				</div>
+				<div class="flex flex-col gap-[16px]">
+					<div
+						class="flex flex-col gap-[4px] border-1 border-primary rounded-lg p-[8px]"
+					>
+						<div class="flex flex-row gap-[8px] items-baseline">
+							<h3 class="text-xl font-medium">Bee Morse</h3>
+							<p class="text-secondary text-lg">Producer</p>
+						</div>
+						<hr class="h-[1px] border-0 bg-secondary" />
+						<div class="flex flex-row gap-[8px] items-baseline">
+							<a class="underline text-secondary hover:text-primary">Email</a>
+							<a class="underline text-secondary hover:text-primary">Website</a>
+						</div>
+					</div>
+					<div
+						class="flex flex-col gap-[4px] border-1 border-primary rounded-lg p-[8px]"
+					>
+						<div class="flex flex-row gap-[8px] items-baseline">
+							<h3 class="text-xl font-medium">Theo Ruefli</h3>
+							<p class="text-secondary text-lg">Tech Lead</p>
+						</div>
+						<hr class="h-[1px] border-0 bg-secondary" />
+						<div class="flex flex-row gap-[8px] items-baseline">
+							<a class="underline text-secondary hover:text-primary">Email</a>
+							<a class="underline text-secondary hover:text-primary">Website</a>
+						</div>
+					</div>
+					<div
+						class="flex flex-col gap-[4px] border-1 border-primary rounded-lg p-[8px]"
+					>
+						<div class="flex flex-row gap-[8px] items-baseline">
+							<h3 class="text-xl font-medium">Chris Hamam</h3>
+							<p class="text-secondary text-lg">Design Lead</p>
+						</div>
+						<hr class="h-[1px] border-0 bg-secondary" />
+						<div class="flex flex-row gap-[8px] items-baseline">
+							<a class="underline text-secondary hover:text-primary">Email</a>
+							<a class="underline text-secondary hover:text-primary">Website</a>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="flex flex-col border-2 border-primary rounded-md">
-				<p>Tech Lead</p>
-				<h3>Theo Ruefli</h3>
-				<span>
-					<a>Email</a>
-					<a>Website</a>
-				</span>
-			</div>
-			<div class="flex flex-col border-2 border-primary rounded-md">
-				<p>Design Lead</p>
-				<h3>Chris Hamam</h3>
-				<span>
-					<a>Email</a>
-					<a>Website</a>
-				</span>
-			</div>
-		</li>
+		</main>
+		<!-- Footer -->
+		 <footer class="flex flex-row gap-[16px] justify-center w-full bg-dark rounded-t-4xl p-[8px] mt-[24px]">
+			<p>&copy;2026 LevelSmith Labs.</p>
+			<a class="underline text-secondary hover:text-primary">Back to Top</a>
+		 </footer>
 	</body>
 </html>

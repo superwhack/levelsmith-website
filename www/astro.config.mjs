@@ -9,11 +9,28 @@ export default defineConfig({
     name: "IBM Plex Mono",
     cssVariable: "--font-ibm-plex-mono",
     options: {
-      variants: [{
-        src: ['./src/assets/fonts/IBMPlexMono-Regular.ttf'],
-        weight: 'normal',
-        style: 'normal'
-      }]
+      variants: [
+        {
+          src: ['./src/assets/fonts/IBMPlexMono-Regular.ttf'],
+          weight: 'normal',
+          style: 'normal'
+        },
+        {
+          src: ['./src/assets/fonts/IBMPlexMono-Medium.ttf'],
+          weight: 500,
+          style: 'normal'
+        },
+        {
+          src: ['./src/assets/fonts/IBMPlexMono-SemiBold.ttf'],
+          weight: 600,
+          style: 'normal'
+        },
+        {
+          src: ['./src/assets/fonts/IBMPlexMono-Bold.ttf'],
+          weight: 'bold',
+          style: 'normal'
+        }
+      ]
     }
   }],
   vite: {

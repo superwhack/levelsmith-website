@@ -4,8 +4,10 @@
     --font-sans: var(--font-ibm-plex-mono);
 
     --color-accent: #385A94;
+    --color-accent-medium: #4d77c1;
+    --color-accent-light: #6188cc;
     --color-primary: #ffffff;
     --color-secondary: #b0b0b0;
     --color-medium: #222222;
-    --color-dark: #1b1b1b;
+    --color-dark: #151515;
 }
