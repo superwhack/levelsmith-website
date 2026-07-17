@@ -1,0 +1,41 @@
+---
+interface Props {
+	img: string;
+	name: string;
+	role: string;
+	description: string;
+	email?: string;
+	phone?: string;
+	website?: string;
+}
+const {
+	img,
+	name,
+	role,
+	description,
+	email = null,
+	phone = null,
+	website = null,
+} = Astro.props;
+---
+
+<div
+	class="flex flex-col gap-[4px] border-1 border-primary rounded-lg px-[8px] pt-[8px] pb-[16px] w-xs h-2xl"
+>
+	<img src={img}/>
+	<hr class="h-[1px] border-0 bg-secondary" />
+	<div class="flex flex-row gap-[8px] items-baseline">
+        <h3 class="text-2xl font-medium">{name}</h3>
+        <p class="text-secondary text-lg">{role}</p>
+    </div>
+	<p>{description}</p>
+	<div class="flex flex-row gap-[16px]">
+		<a class="underline text-secondary hover:text-primary" href={email}
+			>{email}</a
+		><a class="underline text-secondary hover:text-primary" href={phone}
+			>{phone}</a
+		><a class="underline text-secondary hover:text-primary" href={website}
+			>{website}</a
+		>
+	</div>
+</div>

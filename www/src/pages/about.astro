@@ -1,0 +1,62 @@
+---
+import "../styles/global.css";
+import { Font } from "astro:assets";
+import SectionHeading from "../components/SectionHeading.astro";
+import ContactCardLarge from "../components/ContactCardLarge.astro";
+import "../styles/global.css";
+import Footer from "../components/Footer.astro";
+import LinkButton from "../components/LinkButton.astro";
+import Navbar from "../components/Navbar.astro";
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<Font cssVariable="--font-ibm-plex-mono" />
+		<meta name="generator" content={Astro.generator} />
+		<title>LevelSmith Labs</title>
+	</head>
+	<body class="bg-medium text-primary">
+		<!-- Navigation Bar -->
+		<Navbar />
+		<!-- Main Content -->
+		<main>
+			<!-- Heading -->
+			<div class="rounded-b-4xl flex flex-col gap-[8px] px-[40px] pt-[72px] pb-[32px]
+            bg-dark bg-[linear-gradient(to_right,#222222_2px,transparent_1px),linear-gradient(to_bottom,#222222_2px,transparent_1px)] bg-size-[64px_64px]">
+			    <div class="flex flex-row gap-[16px]">
+                    <a class="underline text-secondary hover:text-primary" href="/">Home</a>
+                    <p class="text-secondary">&gt;</p>
+                    <p class="text-secondary">About</p>
+                </div>	
+                <h1 class="text-5xl font-bold uppercase tracking-wide">About</h1>
+			</div>
+            <div class="w-fill h-fit px-[40px]">
+                <!-- Body -->
+                <p class="my-[48px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eos libero accusamus ex tempora quos aperiam ducimus facere odit nobis sint architecto aliquam molestias, ratione reiciendis unde iste molestiae sit et magnam similique. Sapiente quidem accusamus, quis rerum mollitia expedita fugit porro, reiciendis necessitatibus veniam, error ea eveniet alias! Officia.</p>
+                <SectionHeading title="The Team"/>
+                <div class="flex flex-wrap flex-row gap-[16px] my-[48px] justify-center w-full h-fit">
+                    <ContactCardLarge img="./src/assets/placeholder.svg" name="Example" role="Job" description="fds g gd ht h t  fdgg f dgr gr gdfge rgdgr dgdgdrg rgrd grdgdrg drgr gdr gdrg drgdrgdr gdrg dr grd gdgrdg." email="xyz@rit.edu" phone="555-555-5555"/>
+                    <ContactCardLarge img="./src/assets/placeholder.svg" name="Example" role="Job" description="fds g gd ht h t  fdgg f dgr gr gdfge rgdgr dgdgdrg rgrd grdgdrg drgr gdr gdrg drgdrgdr gdrg dr grd gdgrdg." email="xyz@rit.edu" phone="555-555-5555"/>
+                    <ContactCardLarge img="./src/assets/placeholder.svg" name="Example" role="Job" description="fds g gd ht h t  fdgg f dgr gr gdfge rgdgr dgdgdrg rgrd grdgdrg drgr gdr gdrg drgdrgdr gdrg dr grd gdgrdg." email="xyz@rit.edu" phone="555-555-5555"/>
+                    <ContactCardLarge img="./src/assets/placeholder.svg" name="Example" role="Job" description="fds g gd ht h t  fdgg f dgr gr gdfge rgdgr dgdgdrg rgrd grdgdrg drgr gdr gdrg drgdrgdr gdrg dr grd gdgrdg." email="xyz@rit.edu" phone="555-555-5555"/>
+                    <ContactCardLarge img="./src/assets/placeholder.svg" name="Example" role="Job" description="fds g gd ht h t  fdgg f dgr gr gdfge rgdgr dgdgdrg rgrd grdgdrg drgr gdr gdrg drgdrgdr gdrg dr grd gdgrdg." email="xyz@rit.edu" phone="555-555-5555"/>
+                    <ContactCardLarge img="./src/assets/placeholder.svg" name="Example" role="Job" description="fds g gd ht h t  fdgg f dgr gr gdfge rgdgr dgdgdrg rgrd grdgdrg drgr gdr gdrg drgdrgdr gdrg dr grd gdgrdg." email="xyz@rit.edu" phone="555-555-5555"/>
+                    <ContactCardLarge img="./src/assets/placeholder.svg" name="Example" role="Job" description="fds g gd ht h t  fdgg f dgr gr gdfge rgdgr dgdgdrg rgrd grdgdrg drgr gdr gdrg drgdrgdr gdrg dr grd gdgrdg." email="xyz@rit.edu" phone="555-555-5555"/>
+                    <ContactCardLarge img="./src/assets/placeholder.svg" name="Example" role="Job" description="fds g gd ht h t  fdgg f dgr gr gdfge rgdgr dgdgdrg rgrd grdgdrg drgr gdr gdrg drgdrgdr gdrg dr grd gdgrdg." email="xyz@rit.edu" phone="555-555-5555"/>
+                    <ContactCardLarge img="./src/assets/placeholder.svg" name="Example" role="Job" description="fds g gd ht h t  fdgg f dgr gr gdfge rgdgr dgdgdrg rgrd grdgdrg drgr gdr gdrg drgdrgdr gdrg dr grd gdgrdg." email="xyz@rit.edu" phone="555-555-5555"/>
+                    <ContactCardLarge img="./src/assets/placeholder.svg" name="Example" role="Job" description="fds g gd ht h t  fdgg f dgr gr gdfge rgdgr dgdgdrg rgrd grdgdrg drgr gdr gdrg drgdrgdr gdrg dr grd gdgrdg." email="xyz@rit.edu" phone="555-555-5555"/>
+                    <ContactCardLarge img="./src/assets/placeholder.svg" name="Example" role="Job" description="fds g gd ht h t  fdgg f dgr gr gdfge rgdgr dgdgdrg rgrd grdgdrg drgr gdr gdrg drgdrgdr gdrg dr grd gdgrdg." email="xyz@rit.edu" phone="555-555-5555"/>
+                    <ContactCardLarge img="./src/assets/placeholder.svg" name="Example" role="Job" description="fds g gd ht h t  fdgg f dgr gr gdfge rgdgr dgdgdrg rgrd grdgdrg drgr gdr gdrg drgdrgdr gdrg dr grd gdgrdg." email="xyz@rit.edu" phone="555-555-5555"/>
+                    <ContactCardLarge img="./src/assets/placeholder.svg" name="Example" role="Job" description="fds g gd ht h t  fdgg f dgr gr gdfge rgdgr dgdgdrg rgrd grdgdrg drgr gdr gdrg drgdrgdr gdrg dr grd gdgrdg." email="xyz@rit.edu" phone="555-555-5555"/>
+                </div>
+            </div>
+		</main>
+		<!-- Footer -->
+		<Footer/>
+	</body>
+</html>
