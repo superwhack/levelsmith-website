@@ -3,7 +3,7 @@ interface Props {
 	img: string;
 	name: string;
 	role: string;
-	description: string;
+	description?: string;
 	email?: string;
 	phone?: string;
 	website?: string;
@@ -12,7 +12,7 @@ const {
 	img,
 	name,
 	role,
-	description,
+	description = null,
 	email = null,
 	phone = null,
 	website = null,
@@ -20,7 +20,7 @@ const {
 ---
 
 <div
-	class="flex flex-col gap-[4px] border-1 border-primary rounded-lg px-[8px] pt-[8px] pb-[16px] w-xs h-2xl"
+	class="flex flex-col gap-[4px] border-1 border-primary rounded-lg px-[8px] pt-[8px] pb-[16px] w-sm h-2xl"
 >
 	<img src={img}/>
 	<hr class="h-[1px] border-0 bg-secondary" />
