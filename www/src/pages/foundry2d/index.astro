@@ -31,7 +31,7 @@ import Navbar from "../../components/Navbar.astro";
             >
                 <div class="flex flex-row gap-[16px]">
                     <a
-                        class="underline text-secondary hover:text-primary"
+                        class="hover:underline text-primary"
                         href="/">Home</a
                     >
                     <p class="text-secondary">&gt;</p>
@@ -44,36 +44,58 @@ import Navbar from "../../components/Navbar.astro";
             <div class="w-fill h-fit px-[40px]">
                 <!-- Body -->
 
-                <img src="/src/assets/placeholder.svg" class="mx-auto mt-[48px] w-xs"/>
+                <div class="h-[20rem] mt-[48px] flex flex-row justify-center gap-[12px] overflow-x-hidden">
+                    <img src="/src/assets/f2d-screencap-2.png" class="h-full" />
+                    <img src="/src/assets/f2d-screencap-3.png" class="h-full" />
+                    <img src="/src/assets/f2d-screencap-4.png" class="h-full" />
+                </div>
 
-                <p class="my-[48px]">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Delectus eos libero accusamus ex tempora quos aperiam
-                    ducimus facere odit nobis sint architecto aliquam molestias,
-                    ratione reiciendis unde iste molestiae sit et magnam
-                    similique. Sapiente quidem accusamus, quis rerum mollitia
-                    expedita fugit porro, reiciendis necessitatibus veniam,
-                    error ea eveniet alias! Officia.
-                </p>
+                <div class="my-[48px] flex flex-col gap-[12px] mx-auto max-w-7xl">
+                    <p>
+                        Foundry2D is an open source 2D platformer prototyping
+                        tool focused on rapid iteration, maximum customization,
+                        and ease of use. Use eight unique tiles, four different
+                        enemies, coins, and checkpoints to construct playable 2D
+                        platformer levels.
+                    </p>
+                    <p><b>Then, modify everything!</b></p>
+                    <p>
+                        Easily change player movement, enemy behaviors, camera
+                        settings, and every single asset! All textures,
+                        animations, and audio can be replaced with a press of a
+                        button. Share your levels with others, bringing all your
+                        customization with it.
+                    </p>
+                </div>
 
                 <SectionHeading title="Download" />
-                <div class="flex flex-row w-full h-fit justify-center gap-[16px]">
-                    <LinkButton name="Download" />
-                    <LinkButton name="Download" />
-                    <LinkButton name="Download" />
+                <div
+                    class="flex flex-row w-full h-fit justify-center gap-[16px]"
+                >
+                    <LinkButton
+                        name="Itch.io"
+                        href="https://levelsmith-labs.itch.io/foundry2d"
+                    />
                 </div>
                 <SectionHeading title="Credits" />
-                <p><b>Producer:</b> Bee Morse</p>
-                <p><b>Tech Lead:</b> Theo Ruefli</p>
-                <p>
-                    <b>Tech Team:</b> Andrew Hernandez, Ben Haines, Jack Xue, Steven
-                    Poore, Theo Ruefli, Zay Arriaga
-                </p>
-                <p><b>Design Lead:</b> Chris Hamam</p>
-                <p>
-                    <b>Design Team:</b> Chris Hamam, Deacon Mansfield, Evan Calkins,
-                    Tyler Christ, Ziad Jaafar
-                </p>
+                <div class="my-[48px] flex flex-col gap-[12px] mx-auto max-w-7xl">
+                    <p>
+                        This project was developed by a team of twelve students
+                        as an entrepreneurial co-op through Rochester Institute
+                        of Technology.
+                    </p>
+                    <p><b>Producer:</b> Bee Morse</p>
+                    <p><b>Tech Lead:</b> Theo Ruefli</p>
+                    <p>
+                        <b>Tech Team:</b> Andrew Hernandez, Ben Haines, Jack Xue,
+                        Steven Poore, Theo Ruefli, Zay Arriaga
+                    </p>
+                    <p><b>Design Lead:</b> Chris Hamam</p>
+                    <p>
+                        <b>Design Team:</b> Chris Hamam, Deacon Mansfield, Evan Calkins,
+                        Tyler Christ, Ziad Jaafar
+                    </p>
+                </div>
             </div>
         </main>
         <!-- Footer -->
