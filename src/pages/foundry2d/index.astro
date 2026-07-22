@@ -6,6 +6,10 @@ import ContactCardLarge from "../../components/ContactCardLarge.astro";
 import Footer from "../../components/Footer.astro";
 import LinkButton from "../../components/LinkButton.astro";
 import Navbar from "../../components/Navbar.astro";
+// images
+import screencapF2dImage2 from "../../../src/assets/f2d-screencap-2.webp";
+import screencapF2dImage3 from "../../../src/assets/f2d-screencap-3.webp";
+import screencapF2dImage4 from "../../../src/assets/f2d-screencap-4.webp";
 ---
 
 <!doctype html>
@@ -45,9 +49,9 @@ import Navbar from "../../components/Navbar.astro";
                 <!-- Body -->
 
                 <div class="h-[20rem] mt-[48px] flex flex-row justify-center gap-[12px] overflow-x-hidden">
-                    <img src="/src/assets/f2d-screencap-2.webp" class="h-full" />
-                    <img src="/src/assets/f2d-screencap-3.webp" class="h-full" />
-                    <img src="/src/assets/f2d-screencap-4.webp" class="h-full" />
+                    <img src={screencapF2dImage2.src} class="h-full" />
+                    <img src={screencapF2dImage3.src} class="h-full" />
+                    <img src={screencapF2dImage4.src} class="h-full" />
                 </div>
 
                 <div class="my-[48px] flex flex-col gap-[12px] mx-auto max-w-7xl">

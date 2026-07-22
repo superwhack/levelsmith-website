@@ -1,6 +1,8 @@
 ---
+import placeholderImage from '../../src/assets/portrait-placeholder.svg'
+
 interface Props {
-	img: string;
+	img?: string;
 	name: string;
 	role: string;
 	description?: string;
@@ -9,7 +11,7 @@ interface Props {
 	website?: string;
 }
 const {
-	img,
+	img = placeholderImage.src,
 	name,
 	role,
 	description = null,
