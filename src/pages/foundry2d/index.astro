@@ -30,10 +30,10 @@ import screencapF2dImage4 from "../../../src/assets/f2d-screencap-4.webp";
         <main>
             <!-- Heading -->
             <div
-                class="rounded-b-4xl flex flex-col gap-[8px] px-[40px] pt-[72px] pb-[32px]
+                class="rounded-b-4xl flex flex-col gap-[8px] px-[20px] md:px-[40px] pt-[72px] pb-[16px] md:pb-[32px]
             bg-dark bg-[linear-gradient(to_right,#222222_2px,transparent_1px),linear-gradient(to_bottom,#222222_2px,transparent_1px)] bg-size-[64px_64px]"
             >
-                <div class="flex flex-row gap-[16px]">
+                <div class="hidden md:flex flex-row gap-[16px]">
                     <a
                         class="hover:underline text-primary"
                         href="/levelsmith-website/">Home</a
@@ -41,19 +41,21 @@ import screencapF2dImage4 from "../../../src/assets/f2d-screencap-4.webp";
                     <p class="text-secondary">&gt;</p>
                     <p class="text-secondary">LevelSmith: Foundry 2D</p>
                 </div>
-                <h1 class="text-5xl font-bold uppercase tracking-wide">
+                
+                <h1 class="text-3xl md:text-5xl font-bold uppercase text-center md:text-left tracking-wide">
                     LevelSmith: Foundry 2D
                 </h1>
             </div>
             <div class="w-fill h-fit px-[40px]">
                 <!-- Body -->
 
-                <div class="h-[20rem] mt-[48px] flex flex-row justify-center gap-[12px] overflow-x-hidden">
-                    <img src={screencapF2dImage2.src} class="h-full" />
-                    <img src={screencapF2dImage3.src} class="h-full" />
-                    <img src={screencapF2dImage4.src} class="h-full" />
+                <div class="h-fit sm:h-[20rem] mt-[48px] flex flex-row justify-center gap-[12px] overflow-x-hidden">
+                    <img src={screencapF2dImage2.src} class="w-full object-cover" />
+                    <img src={screencapF2dImage3.src} class="hidden md:inline-block w-full object-cover h-full" />
+                    <img src={screencapF2dImage4.src} class="hidden md:inline-block w-full object-cover" />
                 </div>
 
+                <div class="flex flex-col-reverse md:flex-col">
                 <div class="my-[48px] flex flex-col gap-[12px] mx-auto max-w-7xl">
                     <p>
                         Foundry2D is an open source 2D platformer prototyping
@@ -72,19 +74,23 @@ import screencapF2dImage4 from "../../../src/assets/f2d-screencap-4.webp";
                     </p>
                 </div>
 
-                <SectionHeading title="Download" />
-                <div
-                    class="flex flex-row w-full h-fit justify-center gap-[16px]"
-                >
-                    <LinkButton
-                        name="Itch.io"
-                        href="https://levelsmith-labs.itch.io/foundry2d"
-                    />
-                    <LinkButton
-                        name="Github"
-                        href="https://github.com/superwhack/levelsmith-platformer"
-                    />
+                <div>
+                    <SectionHeading title="Download" />
+                    <div
+                        class="flex flex-row w-full h-fit justify-center gap-[16px]"
+                    >
+                        <LinkButton
+                            name="Itch.io"
+                            href="https://levelsmith-labs.itch.io/foundry2d"
+                        />
+                        <LinkButton
+                            name="Github"
+                            href="https://github.com/superwhack/levelsmith-platformer"
+                        />
+                    </div>
                 </div>
+                </div>
+
                 <SectionHeading title="Credits" />
                 <div class="my-[48px] flex flex-col gap-[12px] mx-auto max-w-7xl">
                     <p>
